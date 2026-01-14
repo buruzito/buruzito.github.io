@@ -1,28 +1,1086 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Teste</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
+<!DOCTYPE html><html data-darkreader-mode="dynamic" data-darkreader-scheme="dark" lang="pt-br"><head>
+	<style class="darkreader darkreader--fallback" media="screen" type="text/css">
+	</style>
+	<style class="darkreader darkreader--user-agent" media="screen" type="text/css">@layer {
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}
+	</style>
+	<style class="darkreader darkreader--text" media="screen" type="text/css">
+	</style>
+	<style class="darkreader darkreader--invert" media="screen" type="text/css">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}
+	</style>
+	<style class="darkreader darkreader--inline" media="screen" type="text/css">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}
+	</style>
+	<style class="darkreader darkreader--variables" media="screen" type="text/css">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}
+	</style>
+	<style class="darkreader darkreader--root-vars" media="screen" type="text/css">
+	</style>
+	<base href="https://www.csn.com.br/"/>
+	<title>Homepage - CSN</title>
+	<meta name="description" content="Companhia Siderúrgica Nacional"/><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/favicon/favicon180.png" rel="apple-touch-icon" sizes="180x180"/>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/favicon/favicon144.png" rel="icon" sizes="144x144" type="image/png"/>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/favicon/favicon96.png" rel="icon" sizes="96x96" type="image/png"/>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/favicon/favicon48.png" rel="icon" sizes="48x48" type="image/png"/>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/favicon/favicon32.png" rel="icon" sizes="32x32" type="image/png"/>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/favicon/favicon16.png" rel="icon" sizes="16x16" type="image/png"/><script nonce="33d685df22">
+  var fmId = '';
+  var fmName = '';
+  var fmBase = '';
+  </script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+	<style type="text/css">img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }
+	</style>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
+	<link href="https://www.csn.com.br/" hreflang="pt-br" rel="alternate"/>
+	<link href="https://www.csn.com.br/en/" hreflang="en" rel="alternate"/>
+	<link href="https://www.csn.com.br/" hreflang="x-default" rel="alternate"/>
+	<link href="https://www.csn.com.br/" rel="canonical"/><meta property="og:locale" content="pt_BR"/><meta property="og:type" content="website"/><meta property="og:title" content="Homepage - CSN"/><meta property="og:url" content="https://www.csn.com.br/"/><meta property="og:site_name" content="CSN"/><meta property="article:modified_time" content="2025-09-12T13:05:17+00:00"/><meta name="twitter:card" content="summary_large_image"/><script nonce="80c8170d04" type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.csn.com.br/","url":"https://www.csn.com.br/","name":"Homepage - CSN","isPartOf":{"@id":"https://www.csn.com.br/#website"},"datePublished":"2020-11-11T01:28:25+00:00","dateModified":"2025-09-12T13:05:17+00:00","breadcrumb":{"@id":"https://www.csn.com.br/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://www.csn.com.br/"]}]},{"@type":"BreadcrumbList","@id":"https://www.csn.com.br/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://www.csn.com.br/#website","url":"https://www.csn.com.br/","name":"CSN","description":"Companhia Siderúrgica Nacional","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.csn.com.br/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"pt-BR"}]}</script>
+	<link href="//s3.amazonaws.com" rel="dns-prefetch"/><script nonce="03dccf044c" src="//www.googletagmanager.com/gtag/js?id=G-P4KPRJLMJJ" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async=""></script><script nonce="942db3c163" data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '9.11.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.csn.com.br\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-P4KPRJLMJJ',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-P4KPRJLMJJ', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script><script nonce="97d9ed80a7" type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.csn.com.br\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+	<style id="wp-emoji-styles-inline-css" type="text/css">img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+	</style>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
+	<link href="https://cdn-sites-assets.mziq.com/wp-includes/css/dist/block-library/style.min.css" id="wp-block-library-css" media="all" rel="stylesheet" type="text/css"/>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
+	<style id="classic-theme-styles-inline-css" type="text/css">/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+	</style>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
+	<style id="global-styles-inline-css" type="text/css">:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+	</style>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/plugins/contact-form-7/includes/css/styles.css" id="contact-form-7-css" media="all" rel="stylesheet" type="text/css"/>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/fonts/fonts.css" id="fonts_css-css" media="all" rel="stylesheet" type="text/css"/>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
+	<link href="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/style.css" id="style_css-css" media="all" rel="stylesheet" type="text/css"/>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
+	<script nonce="e451144c53" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js" id="monsterinsights-frontend-script-js" async="async" data-wp-strategy="async"></script><script nonce="41a7cb8102" data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.csn.com.br","hash_tracking":"false","v4_id":"G-P4KPRJLMJJ"};/* ]]> */
+</script><script nonce="c6d0146b65" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/jquery-3.6.4.js" id="jquery-js"></script><script nonce="9aa754703b" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/jquery-ui.min.js" id="jquery_ui_min_js-js"></script><script nonce="373e5674f6" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/lodash.js" id="lodash_js-js"></script><script nonce="96705d0439" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/filesize.js" id="filesize_js-js"></script><script nonce="4d266192d7" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/ics.js" id="ics_js-js"></script><script nonce="4b51fd4423" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/moment.min.js" id="moment_js-js"></script><script nonce="df5ea7fa6f" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/cimento-infografico.js" id="cimento_js-js"></script><script nonce="db2169fc79" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/timeline-csn.js" id="timeline_js-js"></script><script nonce="2f8f249f57" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/owl.carousel.min.js" id="owl_carousel_min_js-js"></script><script nonce="821ec76e5f" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/mzcalendar.datepicker.js" id="mzcalendar_datepicker_js-js"></script><script nonce="894dc81991" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/mziqcalendar.pastevents.js" id="mziqcalendar_pastevents_js-js"></script><script nonce="88160e3a26" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/accessibility.js" id="accessibility-js"></script><script nonce="e95e35a727" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/mz.util.js" id="mz_util_js-js"></script><script nonce="27ac159e82" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/mziq.cmsint.js" id="mziq_cmsint_js-js"></script><script nonce="1e6e344569" type="text/javascript" src="https://s3.amazonaws.com/mz-prd-stockinfo/assets/js/mziq_stockinfo.min.js" id="mziq_stockinfo-js"></script><script nonce="7d1295121a" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/i18n/datepicker-pt-BR.js" id="jquery_ui_pt_br-js"></script><meta name="generator" content="WPML ver:4.8.6 stt:1,42;"/><script nonce="33d685df22">
+    var $ = jQuery.noConflict();
+    var i18nDateFormat = 'DD/MM/YYYY';
+    var company_id = '';
+    var baseEventsUrl = "https://apicatalog.mziq.com/events/events";
+    var lang = "pt-br";
+    var ajaxurlPast = baseEventsUrl + "/past/" + company_id + "/" + lang;
+    var ajaxurlCalendar = baseEventsUrl + "/calendar/" + company_id + "/" + lang;
+    var ajaxurlFuture = baseEventsUrl + "/future/" + company_id + "/" + lang;
+    var i18nShortQuarter = 'T';
+    var ajaxurl = 'https://www.csn.com.br/wp-admin/admin-ajax.php?lang=pt-br';
+    var stockInfoId = '';
+    let siteURL = 'https://www.csn.com.br/wp-content/themes/mziq_csn_inst_2020';
+
+  </script><!--[if lt IE 9]>
+    <script nonce="5b1be0bb74" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/html5shiv.js"></script>
+  <![endif]--><script nonce="33d685df22">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W9PW36X');</script><script nonce="4daf64b225" type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/efe967766c4260dff66b68142bbad557.js"></script><script nonce="33d685df22">
+    const interval = setInterval(() => {
+    const closeBtn = document.getElementById('cookiescript_close');
+    const acceptBtn = document.getElementById('cookiescript_accept');
+    const rejectBtn = document.getElementById('cookiescript_reject');
+
+    if (closeBtn) {
+        closeBtn.setAttribute('aria-label', 'Fechar popup de cookies');
     }
 
-    img {
-      max-width: 300px;
-      height: auto;
-      margin-top: 20px;
+    if (acceptBtn) {
+        acceptBtn.setAttribute('aria-label', 'Aceitar todos os cookies');
     }
-  </style>
+
+    if (rejectBtn) {
+        rejectBtn.setAttribute('aria-label', 'Recusar todos os cookies');
+    }
+
+    if (closeBtn && acceptBtn && rejectBtn) {
+        clearInterval(interval);
+    }
+    }, 300);
+</script>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
+	<meta content="425b6ece93a3483bb1a5517ee9ed82c3" name="darkreader"/>
+	<style class="darkreader darkreader--override" media="screen" type="text/css">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+select * {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast(90%); }
+	</style>
+	<style class="darkreader darkreader--sync" media="screen" type="text/css">
+	</style>
 </head>
-<body>
+<body class="home wp-singular page-template page-template-page-templates page-template-home-page page-template-page-templateshome-page-php page page-id-7 page-parent wp-theme-mziq_csn_inst_2020 accessibility" id="lang-pt-br"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9PW36X" height="0" width="0" class="d-none" title="Google Tag Manager sem JavaScript"></iframe></noscript>
+<header id="header"><a autofocus="" class="skipToContent" href="#content" tabindex="0">Pular para o conteúdo</a>
+<div class="headerAccessibilityActions">
+<div class="center">
+<ul class="header__top__supportMenu d-flex align-items-center">
+	<li class="d-flex align-items-center hide-mobile"><span aria-label="Aumentar a fonte" class="increase-font" role="button" tabindex="0">A+</span><span class="supportMenuDivider" tabindex="-1">|</span><span aria-label="Diminuir a fonte" class="decrease-font" role="button" tabindex="0">A-</span></li>
+	<li class="d-flex align-items-center hide-mobile"><a aria-label="Ativar e desativar o contraste" aria-pressed="false" class="activeContrast" role="button" tabindex="0"><img alt="Ícone do botão de acessibilidade" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/contrasteimg.png"/>Contraste</a></li>
+</ul>
+</div>
+</div>
 
-  <h1>Página de Teste</h1>
-  <p>Essa é uma página simples com uma imagem.</p>
+<div class="headerTop">
+<div class="center">
+<div class="accessibilityAnchors">
+<ul class="accessibilityMenu">
+	<li><a accesskey="1" aria-label="Ir para o conteúdo (tecla 1)" href="#content" id="goToContent">Ir para o conteúdo</a>
 
-  <img src="imagem.jpg" alt="Imagem de teste">
+	<p><a accesskey="1" aria-label="Ir para o conteúdo (tecla 1)" href="#content" id="goToContent">1</a></p>
+	</li>
+	<li><a accesskey="2" aria-label="Ir para o menu (tecla 2)" href="#menu-primary-menu" id="goToMenu">Ir para o menu</a>
+	<p><a accesskey="2" aria-label="Ir para o menu (tecla 2)" href="#menu-primary-menu" id="goToMenu">2</a></p>
+	</li>
+	<li><a accesskey="3" aria-label="Ir para a busca (tecla 3)" href="#buscainput" id="goToSearch">Ir para a busca</a>
+	<p><a accesskey="3" aria-label="Ir para a busca (tecla 3)" href="#buscainput" id="goToSearch">3</a></p>
+	</li>
+</ul>
+</div>
+</div>
+</div>
 
-</body>
-</html>
+<section class="center"><span aria-hidden="true" class="d-none">CSN</span>
+
+<div id="logo"><button class="logo__img"><img alt="Logo CSN" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/logo.png" title="CSN"/></button></div>
+
+<div class="itens-header">
+<div id="nav-links">
+<ul>
+	<li class="lang"><a href="https://www.csn.com.br/en/">English Version</a><a class="active" href="https://www.csn.com.br/">Versão Português</a></li>
+	<li><a aria-label="Link para o site da Fundação CSN" href="https://fundacaocsn.org.br/" target="_blank" title="Link para o site da Fundação CSN">fundação csn</a></li>
+	<li><a aria-label="Link para o site da CSN Inova Externo" href="https://www.csninova.com.br/" target="_blank" title="Link para o site da CSN Inova Externo">CSN Inova</a></li>
+	<li><a aria-label="Link para o site ESG da CSN" href="https://esg.csn.com.br/" target="_blank" title="Link para o site ESG da CSN">ESG CSN</a></li>
+	<li><a aria-label="Link para a página de contatos do Grupo CSN" href="/pt-br/fale-conosco/" target="_self" title="Link para a página de contatos do Grupo CSN">fale conosco</a></li>
+	<li><a aria-label="Link para página de perguntas e respostas mais frequentes sobre nossos negócios" href="/pt-br/faq/" target="_self" title="Link para página de perguntas e respostas mais frequentes sobre nossos negócios">FAQ</a></li>
+</ul>
+</div>
+
+<div id="busca">
+<form action="" class="form-busca" id="form" method="get" name="form" role="search"><input value="https://www.csn.com.br/" type="hidden"/>
+<div class="search" id="search"><label for="buscainput">Busca</label> <input class="txt_busca" id="buscainput" type="text" placeholder="Busca" required="" title="Busca"/><button class="btn" id="enviar_busca" name="enviar_busca" type="submit">Buscar</button></div>
+</form>
+</div>
+</div>
+
+<nav id="nav">
+<section id="menu">
+<ul class="primary-menu menu__list" id="menu-primary-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28" id="menu-item-28"><a href="#">Quem Somos</a>
+
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2155" id="menu-item-2155"><a href="#">Grupo CSN</a>
+
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-403" id="menu-item-403"><a href="https://www.csn.com.br/quem-somos/grupo-csn/o-grupo/" title="Link para a página que descreve o Grupo CSN, sua composição e seu modelo de negócios.">O GRUPO</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-401" id="menu-item-401"><a href="https://www.csn.com.br/quem-somos/grupo-csn/csn-mineracao/" title="Link para a página que descreve a CSN Mineração, seu histórico, composição e atuação.">CSN Mineração</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-400" id="menu-item-400"><a href="https://www.csn.com.br/quem-somos/grupo-csn/csn-energia/" title="Link para a página que descreve a CSN Energia, seu histórico, composição e atuação.">CSN Energia</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-405" id="menu-item-405"><a href="https://www.csn.com.br/quem-somos/grupo-csn/ersa/" title="Link para a página que descreve a ERSA e sua atuação.">ERSA</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404" id="menu-item-404"><a href="https://www.csn.com.br/quem-somos/grupo-csn/ftl/" title="Link para a página que descreve a FTL, sua atuação e malha de operação.">FTL</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397" id="menu-item-397"><a href="https://www.csn.com.br/quem-somos/grupo-csn/mrs/" title="Link para a página que descreve a MRS, sua atuação e malha de operação.">MRS</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-399" id="menu-item-399"><a href="https://www.csn.com.br/quem-somos/grupo-csn/prada-distribuicao/" title="Link para a página que descreve a Prada Distribuição, sua atuação e suas unidades de negócio.">Prada Distribuição</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-398" id="menu-item-398"><a href="https://www.csn.com.br/quem-somos/grupo-csn/prada-embalagens/" title="Link para a página que descreve a Prada Embalagens, sua atuação e suas unidades de negócio.">Prada Embalagens</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396" id="menu-item-396"><a href="https://www.csn.com.br/quem-somos/grupo-csn/sepetiba-tecon/" title="Link para a página que descreve a Sepetiba Tecon, traz seu Portal do Cliente e documentos úteis.">Sepetiba Tecon</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395" id="menu-item-395"><a href="https://www.csn.com.br/quem-somos/grupo-csn/tlsa/" title="Link para a página que descreve a TLSA, sua atuação e malha de operação.">TLSA</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-402" id="menu-item-402"><a href="https://www.csn.com.br/quem-somos/grupo-csn/unidades-fabris-csn/" title="Link que apresenta e descreve as unidades fabris da CSN.">Unidades Fabris (CSN)</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394" id="menu-item-394"><a href="https://www.csn.com.br/quem-somos/grupo-csn/lusosider/" title="Link para a página que descreve a Lusosider e sua atuação.">Lusosider</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-393" id="menu-item-393"><a href="https://www.csn.com.br/quem-somos/grupo-csn/swt/" title="Link para a página que descreve a SWT e sua atuação.">SWT</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-392" id="menu-item-392"><a href="https://www.csn.com.br/quem-somos/grupo-csn/cbsi/" title="Link para a página que descreve a CBSI e seus serviços.">CBSI</a></li>
+		</ul>
+		</li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-406" id="menu-item-406"><a href="https://www.csn.com.br/quem-somos/historico/" title="Link para a página que traz o histórico e linha do tempo do Grupo CSN, desde sua fundação até os dias atuais.">Histórico</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-410" id="menu-item-410"><a href="https://www.csn.com.br/quem-somos/essencia-visao-missao-e-valores/" title="Link para a página onde são apresentadas a essência, visão, missão e valores do Grupo CSN.">Essência, Visão, Missão e Valores</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2156" id="menu-item-2156"><a href="#">Governança Corporativa</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-412" id="menu-item-412"><a href="https://www.csn.com.br/quem-somos/governanca-corporativa/estatuto-codigo-e-politicas/" title="Link para a página onde são apresentados os seguintes documentos: Estatuto Social da CSN e CSN Mineração, Código de Ética e Política Anticorrupção.">Estatuto, Código e Políticas</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-411" id="menu-item-411"><a href="https://www.csn.com.br/quem-somos/governanca-corporativa/estrutura-corporativa/" title="Link para a página que exibe a estrutura de governança da CSN, passando pela Assembleia Geral, Conselho de Administração, Diretoria Executiva e Comitê de Auditoria, além do Comitê Financeiro, Conselho de Sustentabilidade e áreas de apoio à Administração.">Estrutura Corporativa</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413" id="menu-item-413"><a href="https://www.csn.com.br/quem-somos/governanca-corporativa/gestao-de-riscos-compliance-e-auditoria-interna/" title="Link para a página onde é apresentada a metodologia de gestão de riscos da CSN, além de seu Programa de Compliance, Auditoria Interna e canais de denúncia.">Gestão de Riscos, Compliance e Auditoria Interna</a></li>
+		</ul>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2157" id="menu-item-2157"><a href="#">ESG</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419" id="menu-item-419"><a href="https://www.csn.com.br/quem-somos/sustentabilidade/diretrizes/" title="Link para a página onde são apresentadas as diretrizes de sustentabilidade aplicadas no Grupo CSN e o conceito de economia circular.">Diretrizes</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-418" id="menu-item-418"><a href="https://www.csn.com.br/quem-somos/sustentabilidade/gestao-ambiental/" title="Link para a página onde é tratada a questão da gestão ambiental na CSN e também é apresentada a Política de Sustentabilidade da Companhia.">Gestão Ambiental</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-417" id="menu-item-417"><a href="https://www.csn.com.br/quem-somos/sustentabilidade/mudancas-climaticas/" title="Link para a página que trata o tema de mudanças climáticas e as tratativas da empresa sobre isso.">Mudanças Climáticas</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-416" id="menu-item-416"><a href="https://www.csn.com.br/quem-somos/sustentabilidade/relacionamento-institucional/" title="Link para a página que evidencia o relacionamento institucional da CSN com diversos órgãos e entidades.">Relacionamento Institucional</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-414" id="menu-item-414"><a href="https://www.csn.com.br/quem-somos/sustentabilidade/saude-e-seguranca-do-trabalho/" title="Link para a página onde é divulgada a Política Corporativa de Saúde e Segurança do Trabalho.">Saúde e Segurança do Trabalho</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-415" id="menu-item-415"><a href="https://www.csn.com.br/quem-somos/sustentabilidade/gestao-social/" title="Link para a página que cita os projetos sociais da CSN e introduz a Fundação CSN.">Gestão Social</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3522" id="menu-item-3522"><a href="https://www.csn.com.br/quem-somos/sustentabilidade/relatorios-2020/" title="Link para a página que leva ao Relato Integrado do Grupo CSN 2020 e Relato Integrado da CSN Mineração 2020.">Relatórios</a></li>
+		</ul>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2158" id="menu-item-2158"><a href="#">Inovação</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423" id="menu-item-423"><a href="https://www.csn.com.br/quem-somos/inovacao/plano-estrategico-de-inovacao/" title="Link para a página que explica o plano estratégico da inovação do Grupo CSN e introduz a CSN Inova.">Plano Estratégico de Inovação</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-420" id="menu-item-420"><a href="https://www.csn.com.br/quem-somos/inovacao/desenvolvimento-de-produtos/" title="Link para a página que traz nosso modelo de inovação e linha do tempo de desenvolvimento de produtos.">Desenvolvimento de Produtos</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-422" id="menu-item-422"><a href="https://www.csn.com.br/quem-somos/inovacao/infraestrutura/" title="Link para a página que apresenta nossa infraestrutura de inovação e nosso Centro de Pesquisa, Desenvolvimento e Inovação.">Infraestrutura</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-421" id="menu-item-421"><a href="https://www.csn.com.br/quem-somos/inovacao/csn-inova/" title="Link para a página que fala exclusivamente da CSN Inova.">CSN Inova na CSN</a></li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-29" id="menu-item-29"><a href="#">Segmentos</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1289" id="menu-item-1289"><a href="#">Siderurgia</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1288" id="menu-item-1288"><a href="/segmentos/siderurgia/" title="Link para a página que apresenta o negócio de siderurgia, apresenta suas unidades e demonstra seu fluxo de produção.">Geral</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-427" id="menu-item-427"><a href="https://www.csn.com.br/segmentos/siderurgia/automotivo/" title="Link para a página que explica nossa atuação no mercado automotivo e mostra, através de infográfico, as partes de um carro compostas pelo aço.">Automotivo</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-430" id="menu-item-430"><a href="https://www.csn.com.br/segmentos/siderurgia/construcao-civil/" title="Link para a página que explica nossa atuação no mercado de construção civil e mostra, através de infográfico, as partes de uma casa/construção compostas pelo aço.">Construção Civil</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-429" id="menu-item-429"><a href="https://www.csn.com.br/segmentos/siderurgia/embalagens/" title="Link para a página que explica nossa atuação no mercado de folhas metálicas e embalagens para produtos químicos e alimentícios.">Embalagens</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-428" id="menu-item-428"><a href="https://www.csn.com.br/segmentos/siderurgia/linha-branca/" title="Link para a página que explica nossa atuação no mercado de linha branca, atendendo aos fabricantes de eletrodomésticos.">Linha Branca</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-426" id="menu-item-426"><a href="https://www.csn.com.br/segmentos/siderurgia/oem/" title="Link para a página que explica nossa atuação nos segmentos de relaminadores, fabricantes de botijões para gás, tambores para produtos químicos, motores, sucos e agronegócio.">OEM</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-424" id="menu-item-424"><a href="https://www.csn.com.br/segmentos/siderurgia/distribuicao/" title="Link para a página que explica nossa atuação no atendimento das empresas distribuidoras de aço, centro de serviços, e indústrias de tubos e de perfis.">Distribuição</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-425" id="menu-item-425"><a href="https://www.csn.com.br/segmentos/siderurgia/exportacao/" title="Link para a página que explica os serviços de exportação prestados pela CSN.">Exportação</a></li>
+		</ul>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1287" id="menu-item-1287"><a href="#">Mineração</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1286" id="menu-item-1286"><a href="/mineracao/" title="Link para a página que apresenta o negócio de mineração, suas unidades e demonstra seu fluxo de produção.">Geral</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-433" id="menu-item-433"><a href="https://www.csn.com.br/segmentos/mineracao/mercado-global/" title="Link para a página que explica a participação da CSN Mineração no mercado global.">Mercado Global</a></li>
+		</ul>
+		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1291" id="menu-item-1291"><a href="#">Cimento</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1290" id="menu-item-1290"><a href="/cimento/" title="Link para a página que apresenta o negócio de cimentos, suas unidades e demonstra seu fluxo de produção.">Geral</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-435" id="menu-item-435"><a href="https://www.csn.com.br/segmentos/cimento/da-fundacao-a-laje/" title="Link para a página que traz uma ferramenta que mostra as diferentes utilizações do Cimento CSN.">Da Fundação a Laje</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1299" id="menu-item-1299"><a href="https://www.csn.com.br/cimento/eu-entendo-de-cimento/" title="Link para a página que apresenta o “Eu Entendo de Cimento”, um treinamento sobre características, aplicações e vantagens do Cimento CSN.">“Eu entendo de Cimento”</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3053" id="menu-item-3053"><a href="https://www.csn.com.br/cimento/kitrevendedores/" title="Link para a página que apresenta um kit de material para utilização dos revendedores do Cimento CSN.">Kit Revendedores</a></li>
+		</ul>
+		</li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-437" id="menu-item-437"><a href="https://www.csn.com.br/segmentos/logistica/" title="Link para a página que apresenta o negócio de logística, suas unidades e demonstra seu fluxo de produção.">Logística</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-438" id="menu-item-438"><a href="https://www.csn.com.br/segmentos/energia/" title="Link para a página que apresenta o negócio de energia, suas unidades e demonstra seu fluxo de produção.">Energia</a></li>
+	</ul>
+	</li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1952" id="menu-item-1952"><a href="https://www.csn.com.br/produtos-e-servicos/" title="Link para o catálogo de produtos e serviços do Grupo CSN.">Produtos e Serviços</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31" id="menu-item-31"><a href="http://ri.csn.com.br/" title="Link para o site de Relações com Investidores da CSN.">Investidores</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-32" id="menu-item-32"><a href="#">Clientes</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72" id="menu-item-72"><a href="https://www.csn.com.br/clientes/seja-cliente-csn/" title="Link para a página com os contatos e instruções para empresas que desejam ser clientes da CSN">Seja Cliente CSN</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73" id="menu-item-73"><a href="https://www.csn.com.br/clientes/sou-cliente-csn/" title="Link para a página com os contatos e instruções para empresas que são clientes da CSN.">Sou Cliente CSN</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4060" id="menu-item-4060"><a href="https://www.csn.com.br/fornecedores/parceria-banco-fibra/" title="Link para a página PARCERIA BANCO FIBRA">PARCERIA BANCO FIBRA</a></li>
+	</ul>
+	</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-33" id="menu-item-33"><a href="#">Fornecedores</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65" id="menu-item-65"><a href="https://www.csn.com.br/fornecedores/introducao/" title="Link para a página com um breve resumo para os fornecedores da CSN.">Introdução</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66" id="menu-item-66"><a href="https://www.csn.com.br/fornecedores/seja-nosso-fornecedor/" title="Link para a página com instruções para quem deseja ser fornecedor da CSN.">Seja Nosso Fornecedor</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4646" id="menu-item-4646"><a href="https://www.csn.com.br/fornecedores/seja-nosso-fornecedor/manual-de-saude-e-seguranca-do-trabalho/">Manual de Saúde e Segurança do Trabalho</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67" id="menu-item-67"><a href="https://www.csn.com.br/fornecedores/mantenha-seu-cadastro-atualizado/" title="Link com instruções de atualização de cadastro de fornecedores.">Mantenha seu cadastro atualizado</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68" id="menu-item-68"><a href="https://www.csn.com.br/fornecedores/documentacao-para-homologacao/" title="Link com lista de documentos necessários para se tornar um fornecedor da CSN.">Documentação para Homologação</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69" id="menu-item-69"><a href="https://www.csn.com.br/fornecedores/condicoes-gerais-de-fornecimento/" title="Link para a página com os documentos de condições gerais de fornecimento de materiais e condições gerais de prestações de serviços.">Condições Gerais de Fornecimento</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70" id="menu-item-70"><a href="https://www.csn.com.br/fornecedores/parceria-banco-fibra/" title="Link para página que mostra parceria do Banco Fibra disponível para os fornecedores da CSN.">Parceria Banco Fibra</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71" id="menu-item-71"><a href="https://www.csn.com.br/fornecedores/apoio-ao-fornecedor/" title="Link para página que fornece material de apoio aos fornecedores da CSN, além de lista de dúvidas frequentes.">Apoio ao Fornecedor</a></li>
+	</ul>
+	</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-34" id="menu-item-34"><a href="#">Nossas Pessoas</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62" id="menu-item-62"><a href="https://www.csn.com.br/nossas-pessoas/modelo-de-gestao-de-pessoas/" title="Link para a página que apresenta o modelo de gestão de pessoas da CSN e cada um de seus programas.">Modelo de Gestão de Pessoas</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63" id="menu-item-63"><a href="https://www.csn.com.br/nossas-pessoas/trabalhe-conosco/" title="Link para a página de vagas e oportunidades disponíveis no Grupo CSN, além de cadastro de currículo.">Trabalhe Conosco</a></li>
+	</ul>
+	</li>
+</ul>
+</section>
+</nav>
+</section>
+</header>
+<script nonce="33d685df22">
+    $(function(){
+        $('.icon-menu-open').on('click', function() {
+            $('.nav').addClass('active');
+            $('.infoModal').removeClass('active')
+        });
+        $('.icon-menu-close').on('click', function() {
+            $('.nav').removeClass('active');
+        });
+    })
+</script>
+
+<section aria-label="Carrossel principal" id="content" role="region" tabindex="0">
+<div id="banner-slideshow">
+<ul class="carousel">
+	<li class="slide-1" data-title="Slide 1">
+	<figure><img alt="RECEITA LÍQUIDA DA SIDERURGIA&lt;br /&gt;
+R$ 23,2 BILHÕES EM 2024" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2023/05/1.png"/>
+	<figcaption class="center">
+	<div class="legend">
+	<h1 class="slide-heading">RECEITA LÍQUIDA DA SIDERURGIA<br/>
+	R$ 23,2 BILHÕES EM 2024</h1>
+	</div>
+	</figcaption>
+	</figure>
+	</li>
+	<li class="slide-2" data-title="Slide 2">
+	<figure><img alt="VENDAS DE 42 MILHÕES DE TONELADAS&lt;br /&gt;
+DE MINÉRIO DE FERRO EM 2024" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2023/05/2-e1684255479255.png"/>
+	<figcaption class="center">
+	<div class="legend"><span class="slide-heading">VENDAS DE 42 MILHÕES DE TONELADAS<br/>
+	DE MINÉRIO DE FERRO EM 2024</span></div>
+	</figcaption>
+	</figure>
+	</li>
+	<li class="slide-3" data-title="Slide 3">
+	<figure><img alt="EBITDA PARA CIMENTOS DE R$ 1,3 BILHÃO EM 2024" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2023/05/5-1.png"/>
+	<figcaption class="center">
+	<div class="legend"><span class="slide-heading">EBITDA PARA CIMENTOS DE R$ 1,3 BILHÃO EM 2024</span></div>
+	</figcaption>
+	</figure>
+	</li>
+	<li class="slide-4" data-title="Slide 4">
+	<figure><img alt="EBITDA AJUSTADO DE R$ 10,2 BILHÕES EM 2024 &lt;br /&gt;
+" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2020/11/CSN_slide-show_04.jpg"/>
+	<figcaption class="center">
+	<div class="legend"><span class="slide-heading">EBITDA AJUSTADO DE R$ 10,2 BILHÕES EM 2024 </span></div>
+	</figcaption>
+	</figure>
+	</li>
+	<li class="slide-5" data-title="Slide 5">
+	<figure><img alt="fazer bem, fazer mais,&lt;br /&gt;
+fazer para sempre&lt;br /&gt;
+" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2023/05/5.png"/>
+	<figcaption class="center">
+	<div class="legend"><span class="slide-heading">fazer bem, fazer mais,<br/>
+	fazer para sempre</span></div>
+	</figcaption>
+	</figure>
+	</li>
+</ul>
+<button aria-label="Pausar o carrossel" aria-pressed="false" id="toggle-carousel" tabindex="0"><img alt="Pausar o carrossel" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/stop-button.png"/></button><script nonce="0bab7f60b8" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/slickHomeAcessibility.js"></script></div>
+</section>
+
+<section id="carousel">
+<div class="center">
+<div class="carousel-destaque owl-carousel">
+<div class="lazyOwl"><img alt="Relatório de Descaracterização" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2022/05/barragens.png"/>
+<p class="link"><a aria-label="Link para a página de Gestão Ambiental com o relatório de descaracterização de barragens " href="https://www.csn.com.br/quem-somos/sustentabilidade/gestao-ambiental/" target="_blank" title="Link para a página de Gestão Ambiental com o relatório de descaracterização de barragens ">Relatório de Descaracterização </a></p>
+</div>
+
+<div class="lazyOwl"><img alt="Parceria Banco Fibra" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2023/08/carrosel-banner-CSN-1-1.png"/>
+<p class="link"><a aria-label="Link para a página de Parceria com o Banco Fibra" href="https://www.csn.com.br/fornecedores/parceria-banco-fibra/" target="_blank" title="Link para a página de Parceria com o Banco Fibra">Parceria Banco Fibra </a></p>
+</div>
+
+<div class="lazyOwl"><img alt="Relato Integrado 2024" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2025/05/Capinha_Relto2024.jpg"/>
+<p class="link"><a aria-label="Link para a página do site ESG que contém o Relatório Integrado" href="https://esg.csn.com.br/nossa-empresa/relato-integrado-gri/" target="_blank" title="Link para a página do site ESG que contém o Relatório Integrado">Relato Integrado 2024 </a></p>
+</div>
+
+<div class="lazyOwl"><img alt="Relatório de Ação Climática 2023/2024" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2025/09/Img_RelatorioAcaoClimatica.jpg"/>
+<p class="link"><a aria-label="Link para o arquivo do Relatório de Ação Climática 2022" href="https://api.mziq.com/mzfilemanager/v2/d/c13bfd26-0e38-40d4-80f7-8990c9e1d702/a19eb68e-2c51-9d2f-fab7-f89dc639f594?origin=2" target="_blank" title="Link para o arquivo do Relatório de Ação Climática 2022">Relatório de Ação Climática 2023/2024 </a></p>
+</div>
+
+<div class="lazyOwl"><img alt="Trabalhe Conosco" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2023/05/2-1.png"/>
+<p class="link"><a aria-label="Link para a página de vagas e oportunidades disponíveis no Grupo CSN, além de cadastro de currículo." href="https://www.csn.com.br/nossas-pessoas/trabalhe-conosco/" target="_blank" title="Link para a página de vagas e oportunidades disponíveis no Grupo CSN, além de cadastro de currículo.">Trabalhe Conosco </a></p>
+</div>
+
+<div class="lazyOwl"><img alt="Portal Ariba" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2023/05/1-1.png"/>
+<p class="link"><a aria-label="Link para a página de Portal Ariba" href="https://service.ariba.com/Sourcing.aw/124992006/aw?awh=r&amp;awssk=A3TBxuFf&amp;dard=1" target="_blank" title="Link para a página de Portal Ariba">Portal Ariba </a></p>
+</div>
+
+<div class="lazyOwl"><img alt="Coprodutos e Recicláveis" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2020/11/Coprodutos.png"/>
+<p class="link"><a aria-label="Link para a página de Coprodutos e Recicláveis" href="https://comercial.csn.com.br/concorrencias/" target="_blank" title="Link para a página de Coprodutos e Recicláveis">Coprodutos e Recicláveis </a></p>
+</div>
+</div>
+<script nonce="33d685df22">
+            function updateAccessibility($carousel) {
+                $carousel.find('.owl-item').each(function() {
+                    const $item = $(this);
+                    const isVisible = $item.hasClass('active');
+
+                    $item.attr('aria-hidden', !isVisible);
+                    $item.find('a, button, input, select, textarea')
+                        .attr('tabindex', isVisible ? '0' : '-1');
+                });
+            }
+
+            $(function() {
+                const $carousel = $(".carousel-destaque");
+
+                $carousel.owlCarousel({
+                    items: 4,
+                    loop: true,
+                    autoplay: false,
+                    nav: true,
+                    smartSpeed: 500,
+                    responsiveClass: true,
+                    responsive: {
+                        100: {
+                            items: 1
+                        },
+                        480: {
+                            items: 2
+                        },
+                        768: {
+                            items: 3
+                        },
+                        980: {
+                            items: 4
+                        },
+                        1070: {
+                            items: 4
+                        }
+                    },
+                    onInitialize: () => {
+                        setTimeout(() => {
+                            $('.owl-next').attr('aria-label', "Ir para o próximo slide");
+                            $('.owl-prev').attr('aria-label', "Ir para o slide anterior");
+                            $('.owl-next span, .owl-prev span').attr('aria-hidden', 'true').removeAttr('aria-label');
+
+                            updateAccessibility($(".carousel-destaque")); // <- ADICIONA AQUI
+                        }, 500);
+                    },
+                    onTranslated: function() {
+                        updateAccessibility($carousel); // já estava aqui, mantido
+                    }
+                });
+
+                // Garantia extra: forçar após inicialização completa
+                setTimeout(() => {
+                    $carousel.trigger('translated.owl.carousel');
+                }, 600);
+            });
+        </script></div>
+</section>
+
+<section id="video">
+<section class="center">
+<p><a href="https://www.youtube.com/watch?v=VA6jE16OsPI" title="Link para o vídeo “Nosso Manifesto” no Youtube"><img alt="Link para o vídeo “Nosso Manifesto” no Youtube" aria-hidden="true" src="https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2020/11/video_manifesto_csn.png"/></a></p>
+</section>
+</section>
+
+<section id="faleconosco">
+<section class="center">
+<ul>
+	<li>
+	<h2>Fale Conosco</h2>
+
+	<p><a href="/fale-conosco/" title="Link para a página de contatos do Grupo CSN">Entre em Contato</a></p>
+	</li>
+	<li class="etica"><a href="https://www.csn.com.br/codigos-de-conduta/" title="Link para a página que apresenta o Código de Conduta do Grupo CSN"><span style="background-image: url(&#39;https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2024/02/2.png&#39;)">etica</span> </a></li>
+	<li class="linha-verde"><a href="https://www.csn.com.br/quem-somos/sustentabilidade/gestao-ambiental/" title=""><span style="background-image: url(&#39;https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2024/02/6.png&#39;)">linha-verde</span> </a></li>
+	<li class="canal-de-denuncia"><a href="https://canalconfidencial.com.br/csn/" title=""><span style="background-image: url(&#39;https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/452/2024/02/4.png&#39;)">canal-de-denuncia</span> </a></li>
+</ul>
+</section>
+</section>
+
+<footer id="footer">
+<section class="center">
+<ul class="copyright">
+	<li>© CSN | Todos os direitos reservados.</li>
+	<li><a href="/politica-de-privacidade/" title="Link para a página que apresenta a Política de Privacidade do site da CSN">Política de Privacidade</a></li>
+	<li><a href="/termos-condicoes/" title="Link para a página que apresenta os termos e condições do site da CSN">Termos &amp; Condições</a></li>
+	<li><a href="/faq/" title="Link para página de perguntas e respostas mais frequentes sobre nossos negócios">FAQ</a></li>
+	<li><a href="https://www.mzgroup.com/" title="MZ GROUP">Powered by MZ</a></li>
+</ul>
+
+<ul class="midias">
+	<li class="facebook"><a href="https://www.facebook.com/CompanhiaSiderurgicaNacional/" target="_blank" title="Link para a página do Facebook da CSN">facebook</a></li>
+	<li class="linkedin"><a href="https://www.linkedin.com/company/companhiasiderurgicanacional/mycompany/" target="_blank" title="Link para a página do LinkedIn da CSN">linkedin</a></li>
+	<li class="youtube"><a href="https://www.youtube.com/results?search_query=CANALCSN" target="_blank" title="Link para a página do YouTube da CSN">youtube</a></li>
+	<li class="instagram"><a href="https://www.instagram.com/grupocsn/?hl=pt" target="_blank" title="Link para a página do Instagram da CSN">instagram</a></li>
+</ul>
+</section>
+</footer>
+<script nonce="33d685df22">
+    var jsonLd = {
+        "@context": "https://schema.org",
+		    "@type": "Organization",
+		    "name": "CSN",
+		    "logo": "https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/img/logo.png", 
+		    "url": "https://www.csn.com.br"
+    };
+
+    var script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(jsonLd);
+    document.head.appendChild(script); // ou document.body.appendChild(script);
+</script><script nonce="dcfdfdd8f9" type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/sites\/452\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/mziq_csn_inst_2020\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script><!-- BEGIN recaptcha, injected by plugin wp-recaptcha-integration  --><script nonce="97d9ed80a7" type="text/javascript">
+		var recaptcha_widgets={};
+		function wp_recaptchaLoadCallback(){
+			try {
+				grecaptcha;
+			} catch(err){
+				return;
+			}
+			var e = document.querySelectorAll ? document.querySelectorAll('.g-recaptcha:not(.wpcf7-form-control)') : document.getElementsByClassName('g-recaptcha'),
+				form_submits;
+
+			for (var i=0;i<e.length;i++) {
+				(function(el){
+					var wid;
+					// check if captcha element is unrendered
+					if ( ! el.childNodes.length) {
+						wid = grecaptcha.render(el,{
+							'sitekey':'6LcrgH4UAAAAAC_h0Bz7FWwNMtpIGcLI5zbRa-MZ',
+							'theme':el.getAttribute('data-theme') || 'light'
+						});
+						el.setAttribute('data-widget-id',wid);
+					} else {
+						wid = el.getAttribute('data-widget-id');
+						grecaptcha.reset(wid);
+					}
+				})(e[i]);
+			}
+		}
+
+		// if jquery present re-render jquery/ajax loaded captcha elements
+		if ( typeof jQuery !== 'undefined' )
+			jQuery(document).ajaxComplete( function(evt,xhr,set){
+				if( xhr.responseText && xhr.responseText.indexOf('6LcrgH4UAAAAAC_h0Bz7FWwNMtpIGcLI5zbRa-MZ') !== -1)
+					wp_recaptchaLoadCallback();
+			} );
+
+		</script><script nonce="40956a1736" src="https://www.google.com/recaptcha/api.js?onload=wp_recaptchaLoadCallback&amp;render=explicit" async="" defer=""></script><!-- END recaptcha --><script nonce="4914366c7a" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js" id="swv-js"></script><script nonce="90e0b3b2b6" type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.csn.com.br\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script><script nonce="1af760530d" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/plugins/contact-form-7/includes/js/index.js" id="contact-form-7-js"></script><script nonce="ee6ce2c431" type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6Lff5ZYbAAAAANt7FTqKEOa23ABe6CBliYkEZ_hJ" id="google-recaptcha-js"></script><script nonce="154f689c02" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-includes/js/dist/vendor/wp-polyfill.min.js" id="wp-polyfill-js"></script><script nonce="f7646bcc39" type="text/javascript" id="wpcf7-recaptcha-js-extra">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6Lff5ZYbAAAAANt7FTqKEOa23ABe6CBliYkEZ_hJ","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script><script nonce="4a696ee409" type="text/javascript" src="https://cdn-sites-assets.mziq.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js" id="wpcf7-recaptcha-js"></script><script nonce="24df8b6bc3" src="https://cdn-sites-assets.mziq.com/wp-content/themes/mziq_csn_inst_2020/js/main.js"></script><script nonce="382a6058f3" src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script><script nonce="33d685df22">
+        var ht = new HT({
+            token: "1a8b883e8c447e44536e71851f4a00fc",
+            avatar: "MAYA",
+            maxTextSize: 1000
+        });
+    </script><script nonce="33d685df22">
+        //Ajuste no titulo do botão voltar
+        document.addEventListener('DOMContentLoaded', function() {
+            // Verifica se existe histórico de navegação disponível
+            if (window.history && window.history.length) {
+                // Obtém a URL da página anterior
+                var previousUrl = document.referrer;
+
+                // Verifica se a URL da página anterior está disponível
+                if (previousUrl) {
+                    // Faz uma solicitação HTTP para a página anterior para obter o título
+                    fetch(previousUrl)
+                        .then(response => response.text())
+                        .then(html => {
+                            // Cria um elemento HTML temporário para analisar o HTML da página anterior
+                            var tempElement = document.createElement('div');
+                            tempElement.innerHTML = html;
+
+                            // Obtém o título da página anterior
+                            var previousTitle = tempElement.querySelector('title');
+
+                            // Adiciona o título da página anterior ao link de volta, se disponível
+                            var goBackLink = document.querySelector('.goback');
+                            if (goBackLink && previousTitle) {
+                                goBackLink.title = 'Voltar para ' + previousTitle.innerText;
+                            } else if (goBackLink) {
+                                goBackLink.title = 'Voltar para ' + previousUrl;
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Erro ao obter título da página anterior:', error);
+                        });
+                }
+            }
+        });
+        //Ajuste no titulo do botão voltar
+    </script>
+
+</body></html>
